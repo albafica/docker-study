@@ -1,0 +1,10 @@
+version: "3.7"
+
+services: 
+    web:
+        image: nginx:1.19.1
+        ports: 
+            - 80:80
+        volumes: 
+            - /var/www/docker-trial/demo1/html:/var/www/myapp
+            - /var/www/docker-trial/demo1/docker/myapp.conf:/etc/nginx/conf.d/myapp.conf
