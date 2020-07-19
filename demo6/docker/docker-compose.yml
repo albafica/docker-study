@@ -1,0 +1,7 @@
+version: "3.7"
+
+services: 
+    php:
+        image: php:7.3.18-fpm
+        volumes:
+          - /var/www/docker-trial/demo6/php:/var/www/myapp
